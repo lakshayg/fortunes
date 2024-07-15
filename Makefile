@@ -6,8 +6,8 @@ all: $(DATS)
 
 .PHONY: debug
 debug:
-	@echo "srcs: " $(SRCS)
-	@echo "dats: " $(DATS)
+	$(info srcs: $(SRCS))
+	$(info dats: $(DATS))
 
 %.dat: %
 	strfile -c % $< $@
